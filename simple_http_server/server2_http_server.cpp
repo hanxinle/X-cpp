@@ -129,7 +129,7 @@ class TcpThread {
 };
 
 int main(int argc, char *argv[]) {
-	unsigned short port = 8080;
+    unsigned short port = 8080;
     if (argc > 1) {
         port = atoi(argv[1]);
     }
