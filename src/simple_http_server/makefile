@@ -1,10 +1,10 @@
-all:http response
+all:send_string_server send_index_html
 
-http:server2_http_server.cpp
+send_string_server:server1_response_browser.cpp
 	g++ $+ -o $@ -I../xsocket  -std=c++11 -lpthread -lxsocket -L../xsocket
 
-response:server1_response_browser.cpp
+send_index_html:server2_http_server.cpp
 	g++ $+ -o $@ -I../xsocket  -std=c++11 -lpthread -lxsocket -L../xsocket
 
 clean:
-	rm -rf response http
+	rm -rf send_string_server send_index_html
