@@ -1,2 +1,2 @@
 export LD_LIBRARY_PATH=.
-./simple_http
+./send_index_html_server
