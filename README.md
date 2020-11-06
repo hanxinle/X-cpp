@@ -9,7 +9,7 @@
 2.[这个文件](./src/simple_http_server/server2_http_server.cpp) 演示读取 index.html 内容并且响应浏览器 GET 请求，发送该文件到浏览器。index.html 内容包括文本、图片。
 # 2 simple http server 进阶
 
-计划: Support Post， mysql 等等。
+计划: Support Post, MySql 等等。
 
 # 3 nginx
 
