@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="2-socket-server.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="1-hello-libevent.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="3-base-conf.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="4-event-conf.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="5-buffer-event.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source files">
+      <UniqueIdentifier>{9832b372-1372-42de-a777-15dc219aefdf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

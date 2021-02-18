@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="head files">
+      <UniqueIdentifier>{50cb973a-9ba9-4569-be5a-e9eb836354f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source files">
+      <UniqueIdentifier>{ab1dcc30-be5e-47b9-9c13-431b88757135}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="first_libevent.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
