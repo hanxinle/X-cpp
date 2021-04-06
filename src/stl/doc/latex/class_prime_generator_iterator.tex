@@ -1,0 +1,68 @@
+\hypertarget{class_prime_generator_iterator}{}\section{Prime\+Generator\+Iterator$<$ T $>$ 模板类 参考}
+\label{class_prime_generator_iterator}\index{PrimeGeneratorIterator$<$ T $>$@{PrimeGeneratorIterator$<$ T $>$}}
+
+
+质数生成类，演示使用 using 定义迭代器  
+
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_aab0c89d430d2ca8a7c93e2d60a473740}\label{class_prime_generator_iterator_aab0c89d430d2ca8a7c93e2d60a473740}} 
+using {\bfseries iterator\+\_\+category} = std\+::input\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_ac69c4c62883d1936201a67260f726deb}\label{class_prime_generator_iterator_ac69c4c62883d1936201a67260f726deb}} 
+using {\bfseries value\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_ab5333face446b3300db60a7e4a26333f}\label{class_prime_generator_iterator_ab5333face446b3300db60a7e4a26333f}} 
+using {\bfseries difference\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_a30092cbe6922fc32ce0d9e36606bb694}\label{class_prime_generator_iterator_a30092cbe6922fc32ce0d9e36606bb694}} 
+using {\bfseries pointer} = T $\ast$
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_ac32fde043730a995d549659ab4923ec3}\label{class_prime_generator_iterator_ac32fde043730a995d549659ab4923ec3}} 
+using {\bfseries reference} = T \&
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_af6b4c99790d63d6e57a53b89af31c2ff}\label{class_prime_generator_iterator_af6b4c99790d63d6e57a53b89af31c2ff}} 
+{\bfseries Prime\+Generator\+Iterator} (T initial\+Value)
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_aca8de381cb3230a99083f5e0b916fb81}\label{class_prime_generator_iterator_aca8de381cb3230a99083f5e0b916fb81}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_prime_generator_iterator}{Prime\+Generator\+Iterator}} \&other)
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_a9debbdc979ac89c0d063e5ca3a818440}\label{class_prime_generator_iterator_a9debbdc979ac89c0d063e5ca3a818440}} 
+bool {\bfseries operator$>$} (const \mbox{\hyperlink{class_prime_generator_iterator}{Prime\+Generator\+Iterator}} \&other)
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_ab8616c7addb015e88804f7c38758d5e0}\label{class_prime_generator_iterator_ab8616c7addb015e88804f7c38758d5e0}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_prime_generator_iterator}{Prime\+Generator\+Iterator}} \&other)
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_a84c44b4c104343d375778cfe1f45da51}\label{class_prime_generator_iterator_a84c44b4c104343d375778cfe1f45da51}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_prime_generator_iterator}{Prime\+Generator\+Iterator}} \&other)
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_a95fb26c8e33dddef3d86de9bc3bc63b2}\label{class_prime_generator_iterator_a95fb26c8e33dddef3d86de9bc3bc63b2}} 
+\mbox{\hyperlink{class_prime_generator_iterator}{Prime\+Generator\+Iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_a1085cd8d291b7e82455f2e18c9dbf86a}\label{class_prime_generator_iterator_a1085cd8d291b7e82455f2e18c9dbf86a}} 
+\mbox{\hyperlink{class_prime_generator_iterator}{Prime\+Generator\+Iterator}} {\bfseries operator++} (int)
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_ac79bab89586d01d7799b3f816401c718}\label{class_prime_generator_iterator_ac79bab89586d01d7799b3f816401c718}} 
+reference {\bfseries operator $\ast$} ()
+\item 
+\mbox{\Hypertarget{class_prime_generator_iterator_af9bd2639a93ce5981b882b11c637cfe0}\label{class_prime_generator_iterator_af9bd2639a93ce5981b882b11c637cfe0}} 
+pointer {\bfseries operator-\/$>$} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename T = long$>$\newline
+class Prime\+Generator\+Iterator$<$ T $>$}
+
+质数生成类，演示使用 using 定义迭代器 
+
+并且演示了迭代器所支持操作的写法 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch03\+\_\+iterator/\mbox{\hyperlink{prime__generator_8cpp}{prime\+\_\+generator.\+cpp}}\end{DoxyCompactItemize}

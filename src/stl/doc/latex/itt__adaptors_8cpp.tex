@@ -1,0 +1,25 @@
+\hypertarget{itt__adaptors_8cpp}{}\section{ch03\+\_\+iterator/itt\+\_\+adaptors.cpp 文件参考}
+\label{itt__adaptors_8cpp}\index{ch03\_iterator/itt\_adaptors.cpp@{ch03\_iterator/itt\_adaptors.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{itt__adaptors_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em 迭代器适配器(itt\+\_\+adaptors)接收迭代器，并且改变迭代器的行为 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{itt__adaptors_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{itt__adaptors_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{itt\_adaptors.cpp@{itt\_adaptors.cpp}!main@{main}}
+\index{main@{main}!itt\_adaptors.cpp@{itt\_adaptors.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+迭代器适配器(itt\+\_\+adaptors)接收迭代器，并且改变迭代器的行为 
+
+reverse\+\_\+iterator 逆向遍历容器 insert\+\_\+iterator 在指定位置插入元素 move\+\_\+iterator 示例程序不好，并没有说明什么，再找资料吧，教程上说 接收任意类型的input iterator反引用使其产生右值引用(如同 std\+::move 的使用)，暂且当作参考 

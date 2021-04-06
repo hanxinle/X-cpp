@@ -1,0 +1,29 @@
+\hypertarget{vector_8cpp}{}\section{ch02\+\_\+container/vector.cpp 文件参考}
+\label{vector_8cpp}\index{ch02\_container/vector.cpp@{ch02\_container/vector.cpp}}
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vector_8cpp_a976fc53b13064ce7e285c1e690f8dc94}\label{vector_8cpp_a976fc53b13064ce7e285c1e690f8dc94}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries print\+Vector} (const vector$<$ T $>$ \&vec)
+\item 
+int \mbox{\hyperlink{vector_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{vector_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{vector_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{vector.cpp@{vector.cpp}!main@{main}}
+\index{main@{main}!vector.cpp@{vector.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+v.\+push\+\_\+back(\+T t) 添加元素 t 到向量 v 中
+
+v.\+size(),v.\+max\+\_\+size(),v.\+resize() 用于处理 vec 大小相关问题,没必要自定义函数
+
+iterator,下标,指针都能访问 vector 中元素,首选 iterator
+
+v.\+front(),v.\+back() 返回 v 的首尾元素的值

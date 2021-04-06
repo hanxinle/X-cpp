@@ -1,0 +1,52 @@
+\hypertarget{class_circular_buffer_1_1_circular_buffer_iterator}{}\section{Circular\+Buffer$<$ T, cap, Container $>$\+::Circular\+Buffer\+Iterator$<$ Buffer, Iterator $>$ 模板类 参考}
+\label{class_circular_buffer_1_1_circular_buffer_iterator}\index{CircularBuffer$<$ T, cap, Container $>$::CircularBufferIterator$<$ Buffer, Iterator $>$@{CircularBuffer$<$ T, cap, Container $>$::CircularBufferIterator$<$ Buffer, Iterator $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_ae0d1315e83c13ae486c3f97c5b3ccc9a}\label{class_circular_buffer_1_1_circular_buffer_iterator_ae0d1315e83c13ae486c3f97c5b3ccc9a}} 
+using {\bfseries iterator\+\_\+category} = std\+::forward\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a7183b727367a6daca168109b25a0da96}\label{class_circular_buffer_1_1_circular_buffer_iterator_a7183b727367a6daca168109b25a0da96}} 
+using {\bfseries value\+\_\+type} = typename Buffer\+::value\+\_\+type
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_ab51b23fab2770716f7d43fc0b9e0f6c0}\label{class_circular_buffer_1_1_circular_buffer_iterator_ab51b23fab2770716f7d43fc0b9e0f6c0}} 
+using {\bfseries difference\+\_\+type} = std\+::ptrdiff\+\_\+t
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_adb887041460641224d0f98e178c4d36e}\label{class_circular_buffer_1_1_circular_buffer_iterator_adb887041460641224d0f98e178c4d36e}} 
+using {\bfseries pointer} = typename Buffer\+::value\+\_\+type $\ast$
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a30055df1631b1db06c18fa2d33466a4a}\label{class_circular_buffer_1_1_circular_buffer_iterator_a30055df1631b1db06c18fa2d33466a4a}} 
+using {\bfseries reference} = typename Buffer\+::value\+\_\+type \&
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a9cb84bad160f450993507c8920458778}\label{class_circular_buffer_1_1_circular_buffer_iterator_a9cb84bad160f450993507c8920458778}} 
+{\bfseries Circular\+Buffer\+Iterator} (const Buffer \&buf, Iterator begin)
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a48b1374153668dd2fa8b30b995054e87}\label{class_circular_buffer_1_1_circular_buffer_iterator_a48b1374153668dd2fa8b30b995054e87}} 
+{\bfseries Circular\+Buffer\+Iterator} (const Buffer \&buf, Iterator begin, bool done)
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a571a7a1d3ef9240ab680fa0b59838c05}\label{class_circular_buffer_1_1_circular_buffer_iterator_a571a7a1d3ef9240ab680fa0b59838c05}} 
+reference {\bfseries operator $\ast$} () const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_ac70270ed73c69b8cfae64ad514595ca8}\label{class_circular_buffer_1_1_circular_buffer_iterator_ac70270ed73c69b8cfae64ad514595ca8}} 
+pointer {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_aae78bc1f4eaea72e3be9d839af3f3b0d}\label{class_circular_buffer_1_1_circular_buffer_iterator_aae78bc1f4eaea72e3be9d839af3f3b0d}} 
+\mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{Circular\+Buffer\+Iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a44ff1b85476aae6ff341021bbe53849e}\label{class_circular_buffer_1_1_circular_buffer_iterator_a44ff1b85476aae6ff341021bbe53849e}} 
+\mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{Circular\+Buffer\+Iterator}} {\bfseries operator++} (int)
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_a8f823c77930882b99eb73936ab4d8f24}\label{class_circular_buffer_1_1_circular_buffer_iterator_a8f823c77930882b99eb73936ab4d8f24}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{Circular\+Buffer\+Iterator}} \&it) const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_1_1_circular_buffer_iterator_afb5e165997286ad5c5f86ffda208a701}\label{class_circular_buffer_1_1_circular_buffer_iterator_afb5e165997286ad5c5f86ffda208a701}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{Circular\+Buffer\+Iterator}} \&it) const
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch03\+\_\+iterator/\mbox{\hyperlink{ch03__iterator_2circular__buffer_8hpp}{circular\+\_\+buffer.\+hpp}}\end{DoxyCompactItemize}

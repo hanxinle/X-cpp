@@ -1,0 +1,41 @@
+\hypertarget{class_account}{}\section{Account类 参考}
+\label{class_account}\index{Account@{Account}}
+
+
+{\ttfamily \#include $<$account.\+hpp$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_a81e627590e15fbe3e683e6ecd7c24e39}\label{class_account_a81e627590e15fbe3e683e6ecd7c24e39}} 
+{\bfseries Account} (const std\+::string \&name)
+\item 
+\mbox{\Hypertarget{class_account_a193389d61d1a14590008a3dccebd4113}\label{class_account_a193389d61d1a14590008a3dccebd4113}} 
+const std\+::string \& {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{class_account_ad1717cdd85a7280ab4a24a16e3dc3dab}\label{class_account_ad1717cdd85a7280ab4a24a16e3dc3dab}} 
+const std\+::vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ \& {\bfseries get\+Transactions} () const
+\item 
+\mbox{\Hypertarget{class_account_ac5ead7e97de0e4d034296208d5eab1b0}\label{class_account_ac5ead7e97de0e4d034296208d5eab1b0}} 
+void {\bfseries add\+Transaction} (\mbox{\hyperlink{class_transaction}{Transaction}} \&t)
+\item 
+\mbox{\Hypertarget{class_account_a6148b1a22c0424044f4c121c3d337957}\label{class_account_a6148b1a22c0424044f4c121c3d337957}} 
+long double {\bfseries balance} () const
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_aa488f943940e192b2c1f3a010c644d7f}\label{class_account_aa488f943940e192b2c1f3a010c644d7f}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_account}{Account}} \&a)
+\item 
+\mbox{\Hypertarget{class_account_a209cc1cd91415f99ab30c830b7321c35}\label{class_account_a209cc1cd91415f99ab30c830b7321c35}} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \mbox{\hyperlink{class_account}{Account}} \&a)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+This class defines a money account which stores financial transactions and maintains a balance. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch05\+\_\+io/account.\+hpp\end{DoxyCompactItemize}

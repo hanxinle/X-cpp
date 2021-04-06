@@ -1,0 +1,129 @@
+\hypertarget{class_circular_buffer}{}\section{Circular\+Buffer$<$ T, cap, Container $>$ 模板类 参考}
+\label{class_circular_buffer}\index{CircularBuffer$<$ T, cap, Container $>$@{CircularBuffer$<$ T, cap, Container $>$}}
+
+
+\mbox{\hyperlink{class_circular_buffer}{Circular\+Buffer}} 中新增 iterator 类，使其支持迭代器操作  
+
+
+
+
+{\ttfamily \#include $<$circular\+\_\+buffer.\+hpp$>$}
+
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{Circular\+Buffer\+Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ae63fd22da82f592a83eb8c04608a6bed}\label{class_circular_buffer_ae63fd22da82f592a83eb8c04608a6bed}} 
+using {\bfseries value\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ae63fd22da82f592a83eb8c04608a6bed}\label{class_circular_buffer_ae63fd22da82f592a83eb8c04608a6bed}} 
+using {\bfseries value\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a02d62302ded5e595e263c47e2b6067b3}\label{class_circular_buffer_a02d62302ded5e595e263c47e2b6067b3}} 
+typedef \mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{Circular\+Buffer\+Iterator}}$<$ \mbox{\hyperlink{class_container}{Container}}, typename Container\+::iterator $>$ {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a56571b8261660bcc4228ec69605321b0}\label{class_circular_buffer_a56571b8261660bcc4228ec69605321b0}} 
+T \& {\bfseries head} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ad6a99046a17fd8350b99a6bdeb599d39}\label{class_circular_buffer_ad6a99046a17fd8350b99a6bdeb599d39}} 
+T \& {\bfseries tail} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a027a65b191bbb9ac690fd5586dfd31bf}\label{class_circular_buffer_a027a65b191bbb9ac690fd5586dfd31bf}} 
+T const  \& {\bfseries head} () const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a9c93d8c57a848bd6f8e7373766fc38b9}\label{class_circular_buffer_a9c93d8c57a848bd6f8e7373766fc38b9}} 
+T const  \& {\bfseries tail} () const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a6001435973002d0d8b58899fd746bedf}\label{class_circular_buffer_a6001435973002d0d8b58899fd746bedf}} 
+void {\bfseries push\+\_\+back} (T val) noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_aa55a572d8c2920e9f02de0484216a0df}\label{class_circular_buffer_aa55a572d8c2920e9f02de0484216a0df}} 
+void {\bfseries place\+\_\+back} (T val)
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a6ca20439d842129c0b08509d9af0d451}\label{class_circular_buffer_a6ca20439d842129c0b08509d9af0d451}} 
+void {\bfseries pop} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ae8dc74d187c916b12c1ed229448e99df}\label{class_circular_buffer_ae8dc74d187c916b12c1ed229448e99df}} 
+std\+::size\+\_\+t {\bfseries size} () const noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_aa6f3f973f3795c1c6c181096973acc90}\label{class_circular_buffer_aa6f3f973f3795c1c6c181096973acc90}} 
+std\+::size\+\_\+t {\bfseries capacity} () noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a36f438aaea90c735c513fce4f6e42bfd}\label{class_circular_buffer_a36f438aaea90c735c513fce4f6e42bfd}} 
+bool {\bfseries empty} () const noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a08a7b5ef4f166a3c9edac00fd228b829}\label{class_circular_buffer_a08a7b5ef4f166a3c9edac00fd228b829}} 
+bool {\bfseries full} () const noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ad4f54160bfeb6cee7491694e46af099f}\label{class_circular_buffer_ad4f54160bfeb6cee7491694e46af099f}} 
+Container\+::iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a94b6baacd02945fa97ea2091f54ee94c}\label{class_circular_buffer_a94b6baacd02945fa97ea2091f54ee94c}} 
+Container\+::iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a56571b8261660bcc4228ec69605321b0}\label{class_circular_buffer_a56571b8261660bcc4228ec69605321b0}} 
+T \& {\bfseries head} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ad6a99046a17fd8350b99a6bdeb599d39}\label{class_circular_buffer_ad6a99046a17fd8350b99a6bdeb599d39}} 
+T \& {\bfseries tail} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a027a65b191bbb9ac690fd5586dfd31bf}\label{class_circular_buffer_a027a65b191bbb9ac690fd5586dfd31bf}} 
+T const  \& {\bfseries head} () const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a9c93d8c57a848bd6f8e7373766fc38b9}\label{class_circular_buffer_a9c93d8c57a848bd6f8e7373766fc38b9}} 
+T const  \& {\bfseries tail} () const
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a6001435973002d0d8b58899fd746bedf}\label{class_circular_buffer_a6001435973002d0d8b58899fd746bedf}} 
+void {\bfseries push\+\_\+back} (T val) noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_aa55a572d8c2920e9f02de0484216a0df}\label{class_circular_buffer_aa55a572d8c2920e9f02de0484216a0df}} 
+void {\bfseries place\+\_\+back} (T val)
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a6ca20439d842129c0b08509d9af0d451}\label{class_circular_buffer_a6ca20439d842129c0b08509d9af0d451}} 
+void {\bfseries pop} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ae8dc74d187c916b12c1ed229448e99df}\label{class_circular_buffer_ae8dc74d187c916b12c1ed229448e99df}} 
+std\+::size\+\_\+t {\bfseries size} () const noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_aa6f3f973f3795c1c6c181096973acc90}\label{class_circular_buffer_aa6f3f973f3795c1c6c181096973acc90}} 
+std\+::size\+\_\+t {\bfseries capacity} () noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a36f438aaea90c735c513fce4f6e42bfd}\label{class_circular_buffer_a36f438aaea90c735c513fce4f6e42bfd}} 
+bool {\bfseries empty} () const noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a08a7b5ef4f166a3c9edac00fd228b829}\label{class_circular_buffer_a08a7b5ef4f166a3c9edac00fd228b829}} 
+bool {\bfseries full} () const noexcept
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a47cc0f94ec9777520e1af0c35998c836}\label{class_circular_buffer_a47cc0f94ec9777520e1af0c35998c836}} 
+\mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_circular_buffer_a279006fdd3128eebf0ae3690d1862ab0}\label{class_circular_buffer_a279006fdd3128eebf0ae3690d1862ab0}} 
+\mbox{\hyperlink{class_circular_buffer_1_1_circular_buffer_iterator}{iterator}} {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ace97e9f2ea4a42cac0f4908eeab66d96}\label{class_circular_buffer_ace97e9f2ea4a42cac0f4908eeab66d96}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_circular_buffer}{Circular\+Buffer}} \&buf)
+\item 
+\mbox{\Hypertarget{class_circular_buffer_ace97e9f2ea4a42cac0f4908eeab66d96}\label{class_circular_buffer_ace97e9f2ea4a42cac0f4908eeab66d96}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_circular_buffer}{Circular\+Buffer}} \&buf)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename T, int cap, typename Container = std\+::array$<$\+T, cap$>$$>$\newline
+class Circular\+Buffer$<$ T, cap, Container $>$}
+
+\mbox{\hyperlink{class_circular_buffer}{Circular\+Buffer}} 中新增 iterator 类，使其支持迭代器操作 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch02\+\_\+container/\mbox{\hyperlink{ch02__container_2circular__buffer_8hpp}{circular\+\_\+buffer.\+hpp}}\end{DoxyCompactItemize}

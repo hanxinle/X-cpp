@@ -1,0 +1,37 @@
+\hypertarget{classdebug__allocator}{}\section{debug\+\_\+allocator$<$ T $>$ 模板类 参考}
+\label{classdebug__allocator}\index{debug\_allocator$<$ T $>$@{debug\_allocator$<$ T $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdebug__allocator_a3ba700c6efea5f5bafcafac396defd19}\label{classdebug__allocator_a3ba700c6efea5f5bafcafac396defd19}} 
+using {\bfseries value\+\_\+type} = T
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdebug__allocator_add88bf2a6be0b7de7b157af7d1916ecf}\label{classdebug__allocator_add88bf2a6be0b7de7b157af7d1916ecf}} 
+{\footnotesize template$<$typename U $>$ }\\{\bfseries debug\+\_\+allocator} (const \mbox{\hyperlink{classdebug__allocator}{debug\+\_\+allocator}}$<$ U $>$ \&) noexcept
+\item 
+\mbox{\Hypertarget{classdebug__allocator_a4102a2377a61ea04d0855fe0576b5beb}\label{classdebug__allocator_a4102a2377a61ea04d0855fe0576b5beb}} 
+value\+\_\+type $\ast$ {\bfseries allocate} (std\+::size\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classdebug__allocator_ab9ed1fc2a0ad9a463a64ec81f59157f4}\label{classdebug__allocator_ab9ed1fc2a0ad9a463a64ec81f59157f4}} 
+void {\bfseries deallocate} (value\+\_\+type $\ast$p, std\+::size\+\_\+t n) noexcept
+\item 
+\mbox{\Hypertarget{classdebug__allocator_ae2870576b2f8a00ae04bdfaf4144e123}\label{classdebug__allocator_ae2870576b2f8a00ae04bdfaf4144e123}} 
+{\footnotesize template$<$typename U , typename... Args$>$ }\\void {\bfseries construct} (U $\ast$p, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classdebug__allocator_a37c8e2b9100e304c4e1ca7e3770d946a}\label{classdebug__allocator_a37c8e2b9100e304c4e1ca7e3770d946a}} 
+{\footnotesize template$<$typename U $>$ }\\void {\bfseries destroy} (U $\ast$p) noexcept
+\item 
+\mbox{\Hypertarget{classdebug__allocator_a00de989a2ef26e5d4ff8f0d16d0e5e5c}\label{classdebug__allocator_a00de989a2ef26e5d4ff8f0d16d0e5e5c}} 
+{\footnotesize template$<$typename U $>$ }\\bool {\bfseries operator==} (const \mbox{\hyperlink{classdebug__allocator}{debug\+\_\+allocator}}$<$ U $>$ \&) noexcept
+\item 
+\mbox{\Hypertarget{classdebug__allocator_ad25d2cc5b445927057769c404cd9e4ff}\label{classdebug__allocator_ad25d2cc5b445927057769c404cd9e4ff}} 
+{\footnotesize template$<$typename U $>$ }\\bool {\bfseries operator!=} (const \mbox{\hyperlink{classdebug__allocator}{debug\+\_\+allocator}}$<$ U $>$ \&u) noexcept
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch06\+\_\+memory/\mbox{\hyperlink{debug__allocator_8cpp}{debug\+\_\+allocator.\+cpp}}\end{DoxyCompactItemize}

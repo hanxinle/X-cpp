@@ -1,0 +1,40 @@
+\hypertarget{struct_work_controller}{}\section{Work\+Controller结构体 参考}
+\label{struct_work_controller}\index{WorkController@{WorkController}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_work_controller_a4f1b152cf7a264704a5a5f5d747068ac}\label{struct_work_controller_a4f1b152cf7a264704a5a5f5d747068ac}} 
+{\bfseries Work\+Controller} (const \mbox{\hyperlink{struct_work_controller}{Work\+Controller}} \&)=delete
+\item 
+\mbox{\Hypertarget{struct_work_controller_ad18fb0f2b60441bc2ebbe82ebe43e31d}\label{struct_work_controller_ad18fb0f2b60441bc2ebbe82ebe43e31d}} 
+\mbox{\hyperlink{struct_work_controller}{Work\+Controller}} \& {\bfseries operator=} (const \mbox{\hyperlink{struct_work_controller}{Work\+Controller}} \&)=delete
+\item 
+\mbox{\Hypertarget{struct_work_controller_a4f1b152cf7a264704a5a5f5d747068ac}\label{struct_work_controller_a4f1b152cf7a264704a5a5f5d747068ac}} 
+{\bfseries Work\+Controller} (const \mbox{\hyperlink{struct_work_controller}{Work\+Controller}} \&)=delete
+\item 
+\mbox{\Hypertarget{struct_work_controller_ad18fb0f2b60441bc2ebbe82ebe43e31d}\label{struct_work_controller_ad18fb0f2b60441bc2ebbe82ebe43e31d}} 
+\mbox{\hyperlink{struct_work_controller}{Work\+Controller}} \& {\bfseries operator=} (const \mbox{\hyperlink{struct_work_controller}{Work\+Controller}} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_work_controller_a7e0fe66e86710ee56b28705f2813a0a9}\label{struct_work_controller_a7e0fe66e86710ee56b28705f2813a0a9}} 
+mutex {\bfseries m}
+\item 
+\mbox{\Hypertarget{struct_work_controller_a0ca689a9180d46a6c22f070cbead965f}\label{struct_work_controller_a0ca689a9180d46a6c22f070cbead965f}} 
+condition\+\_\+variable {\bfseries work\+Ready\+CV}
+\item 
+\mbox{\Hypertarget{struct_work_controller_afb94ca27764337090b29492368d5d494}\label{struct_work_controller_afb94ca27764337090b29492368d5d494}} 
+queue$<$ filesystem\+::path $>$ {\bfseries work\+Queue}
+\item 
+\mbox{\Hypertarget{struct_work_controller_a25fb1101d20bfc1e1733a57454e34cf7}\label{struct_work_controller_a25fb1101d20bfc1e1733a57454e34cf7}} 
+unordered\+\_\+map$<$ string, vector$<$ string $>$ $>$ {\bfseries file\+Hashes}
+\item 
+\mbox{\Hypertarget{struct_work_controller_a0d9ee1c1a095461a7a6264fe8c225df1}\label{struct_work_controller_a0d9ee1c1a095461a7a6264fe8c225df1}} 
+atomic$<$ bool $>$ {\bfseries quit} \{false\}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch07\+\_\+thread/match/match.\+cpp\end{DoxyCompactItemize}

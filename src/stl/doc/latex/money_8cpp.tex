@@ -1,0 +1,74 @@
+\hypertarget{money_8cpp}{}\section{ch05\+\_\+io/money.cpp 文件参考}
+\label{money_8cpp}\index{ch05\_io/money.cpp@{ch05\_io/money.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include \char`\"{}transaction.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}account.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}viewhelper.\+hpp\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{money_8cpp_a005884d1097c1571812c0f5626fcf752}\label{money_8cpp_a005884d1097c1571812c0f5626fcf752}} 
+\#define {\bfseries D\+A\+T\+A\+\_\+\+F\+I\+LE}~\char`\"{}money.\+dat\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{money_8cpp_ae36fadccd5dbc307864499e9905711df}{read\+In\+Data\+File}} (vector$<$ \mbox{\hyperlink{class_account}{Account}} $>$ \&accounts, istream \&is)
+\item 
+void \mbox{\hyperlink{money_8cpp_af27e3abc22b28937c40f90ea40643ef2}{output\+Data\+To\+File}} (vector$<$ \mbox{\hyperlink{class_account}{Account}} $>$ \&accounts, ostream \&os)
+\item 
+int \mbox{\hyperlink{money_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em 一个账户管理程序，可以存款等，进入程序执行 help 命令 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{money_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{money_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{money.cpp@{money.cpp}!main@{main}}
+\index{main@{main}!money.cpp@{money.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+一个账户管理程序，可以存款等，进入程序执行 help 命令 
+
+deposit 存款，withdraw 汇款到其它账户，ledger 浏览账户明细 \mbox{\Hypertarget{money_8cpp_af27e3abc22b28937c40f90ea40643ef2}\label{money_8cpp_af27e3abc22b28937c40f90ea40643ef2}} 
+\index{money.cpp@{money.cpp}!outputDataToFile@{outputDataToFile}}
+\index{outputDataToFile@{outputDataToFile}!money.cpp@{money.cpp}}
+\subsubsection{\texorpdfstring{outputDataToFile()}{outputDataToFile()}}
+{\footnotesize\ttfamily void output\+Data\+To\+File (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_account}{Account}} $>$ \&}]{accounts,  }\item[{ostream \&}]{os }\end{DoxyParamCaption})}
+
+This function will output all accounts and transactions to our file so that they can be loaded at a later time.
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em accounts} & -\/ A vector refernce that holds the accounts to output \\
+\hline
+\mbox{\texttt{ in}}  & {\em os} & -\/ The output stream to write the data to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{money_8cpp_ae36fadccd5dbc307864499e9905711df}\label{money_8cpp_ae36fadccd5dbc307864499e9905711df}} 
+\index{money.cpp@{money.cpp}!readInDataFile@{readInDataFile}}
+\index{readInDataFile@{readInDataFile}!money.cpp@{money.cpp}}
+\subsubsection{\texorpdfstring{readInDataFile()}{readInDataFile()}}
+{\footnotesize\ttfamily int read\+In\+Data\+File (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_account}{Account}} $>$ \&}]{accounts,  }\item[{istream \&}]{is }\end{DoxyParamCaption})}
+
+This function will read in the data file and pull all of the account info and transaction data back into memory. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em accounts} & -\/ This vector will populated with accounts \\
+\hline
+\mbox{\texttt{ in}}  & {\em is} & -\/ The input stream to read data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+-\/ the number of transactions read in 
+\end{DoxyReturn}

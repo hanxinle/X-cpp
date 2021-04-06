@@ -1,0 +1,39 @@
+\hypertarget{maps_8cpp}{}\section{ch02\+\_\+container/maps.cpp 文件参考}
+\label{maps_8cpp}\index{ch02\_container/maps.cpp@{ch02\_container/maps.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_simple_object}{Simple\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{maps_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{maps_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{maps_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{maps.cpp@{maps.cpp}!main@{main}}
+\index{main@{main}!maps.cpp@{maps.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+m.\+insert(pair$<$t1,t2$>$) insert with pair
+
+m\mbox{[}t1\mbox{]} = construtor func; insert with \mbox{[}\mbox{]}
+
+\mbox{[}\mbox{]} allows insert though same key exists
+
+m.\+insert(\{t1,t2\}) insert with \{\} make a pair
+
+const auto \mbox{[}iterator, inserted\mbox{]} = object\+Map.\+insert(\{\}); insert() return \mbox{[}index of insert\+Item , boolen if key\+\_\+inserted\mbox{]}
+
+x.\+first,x.\+second 返回元素 x 的 key 及 value
+
+m.\+erase(t1) map 清除特定 key 的元素
+
+m.\+clear() 清理 map 后 map.\+size() 为零

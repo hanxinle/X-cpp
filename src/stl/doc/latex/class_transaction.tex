@@ -1,0 +1,41 @@
+\hypertarget{class_transaction}{}\section{Transaction类 参考}
+\label{class_transaction}\index{Transaction@{Transaction}}
+
+
+{\ttfamily \#include $<$transaction.\+hpp$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transaction_ada76eada463f7a8761b3492f076a5533}\label{class_transaction_ada76eada463f7a8761b3492f076a5533}} 
+{\bfseries Transaction} (const std\+::string \&account\+Name, long double amount, const std\+::string \&memo)
+\item 
+\mbox{\Hypertarget{class_transaction_a950fdd8b74cbd19c40bfd3ea814d0292}\label{class_transaction_a950fdd8b74cbd19c40bfd3ea814d0292}} 
+const std\+::string \& {\bfseries get\+Account\+Name} () const
+\item 
+\mbox{\Hypertarget{class_transaction_aa62193f1c9bfb76f0247e4c0117e4a39}\label{class_transaction_aa62193f1c9bfb76f0247e4c0117e4a39}} 
+long double {\bfseries get\+Amount} () const
+\item 
+\mbox{\Hypertarget{class_transaction_a69d40d9b4b59a2849155e057b615b6b6}\label{class_transaction_a69d40d9b4b59a2849155e057b615b6b6}} 
+const std\+::string \& {\bfseries get\+Memo} () const
+\item 
+\mbox{\Hypertarget{class_transaction_abc4c69be3865d8ca95bb0a7e16693276}\label{class_transaction_abc4c69be3865d8ca95bb0a7e16693276}} 
+time\+\_\+t {\bfseries get\+Transaction\+Date} () const
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transaction_a0c82d8cc8b4190d6e5f4a69e0931bb1c}\label{class_transaction_a0c82d8cc8b4190d6e5f4a69e0931bb1c}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_transaction}{Transaction}} \&t)
+\item 
+\mbox{\Hypertarget{class_transaction_a4432dd6732577216fd4b462180a4e4db}\label{class_transaction_a4432dd6732577216fd4b462180a4e4db}} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \mbox{\hyperlink{class_transaction}{Transaction}} \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+This class defines a single financial transaction. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+ch05\+\_\+io/transaction.\+hpp\end{DoxyCompactItemize}
