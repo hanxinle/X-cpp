@@ -1,4 +1,4 @@
-# 一些帮助自己熟悉 Linux 的程序
+# C++、操作系统、计算机网络程序设计示例
 
 ## 1 simple http server(SUPPORT GET ONLY)
 
