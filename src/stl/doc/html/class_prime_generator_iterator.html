@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>stl learning: PrimeGeneratorIterator&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">stl learning
+   </div>
+   <div id="projectbrief">examples and notes on stl feature</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_prime_generator_iterator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">PrimeGeneratorIterator&lt; T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>质数生成类，演示使用 using 定义迭代器  
+ <a href="class_prime_generator_iterator.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aab0c89d430d2ca8a7c93e2d60a473740"><td class="memItemLeft" align="right" valign="top"><a id="aab0c89d430d2ca8a7c93e2d60a473740"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::input_iterator_tag</td></tr>
+<tr class="separator:aab0c89d430d2ca8a7c93e2d60a473740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69c4c62883d1936201a67260f726deb"><td class="memItemLeft" align="right" valign="top"><a id="ac69c4c62883d1936201a67260f726deb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:ac69c4c62883d1936201a67260f726deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5333face446b3300db60a7e4a26333f"><td class="memItemLeft" align="right" valign="top"><a id="ab5333face446b3300db60a7e4a26333f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = T</td></tr>
+<tr class="separator:ab5333face446b3300db60a7e4a26333f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30092cbe6922fc32ce0d9e36606bb694"><td class="memItemLeft" align="right" valign="top"><a id="a30092cbe6922fc32ce0d9e36606bb694"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T *</td></tr>
+<tr class="separator:a30092cbe6922fc32ce0d9e36606bb694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32fde043730a995d549659ab4923ec3"><td class="memItemLeft" align="right" valign="top"><a id="ac32fde043730a995d549659ab4923ec3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = T &amp;</td></tr>
+<tr class="separator:ac32fde043730a995d549659ab4923ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af6b4c99790d63d6e57a53b89af31c2ff"><td class="memItemLeft" align="right" valign="top"><a id="af6b4c99790d63d6e57a53b89af31c2ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PrimeGeneratorIterator</b> (T initialValue)</td></tr>
+<tr class="separator:af6b4c99790d63d6e57a53b89af31c2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8de381cb3230a99083f5e0b916fb81"><td class="memItemLeft" align="right" valign="top"><a id="aca8de381cb3230a99083f5e0b916fb81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_prime_generator_iterator.html">PrimeGeneratorIterator</a> &amp;other)</td></tr>
+<tr class="separator:aca8de381cb3230a99083f5e0b916fb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9debbdc979ac89c0d063e5ca3a818440"><td class="memItemLeft" align="right" valign="top"><a id="a9debbdc979ac89c0d063e5ca3a818440"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="class_prime_generator_iterator.html">PrimeGeneratorIterator</a> &amp;other)</td></tr>
+<tr class="separator:a9debbdc979ac89c0d063e5ca3a818440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8616c7addb015e88804f7c38758d5e0"><td class="memItemLeft" align="right" valign="top"><a id="ab8616c7addb015e88804f7c38758d5e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_prime_generator_iterator.html">PrimeGeneratorIterator</a> &amp;other)</td></tr>
+<tr class="separator:ab8616c7addb015e88804f7c38758d5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c44b4c104343d375778cfe1f45da51"><td class="memItemLeft" align="right" valign="top"><a id="a84c44b4c104343d375778cfe1f45da51"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_prime_generator_iterator.html">PrimeGeneratorIterator</a> &amp;other)</td></tr>
+<tr class="separator:a84c44b4c104343d375778cfe1f45da51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fb26c8e33dddef3d86de9bc3bc63b2"><td class="memItemLeft" align="right" valign="top"><a id="a95fb26c8e33dddef3d86de9bc3bc63b2"></a>
+<a class="el" href="class_prime_generator_iterator.html">PrimeGeneratorIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="separator:a95fb26c8e33dddef3d86de9bc3bc63b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1085cd8d291b7e82455f2e18c9dbf86a"><td class="memItemLeft" align="right" valign="top"><a id="a1085cd8d291b7e82455f2e18c9dbf86a"></a>
+<a class="el" href="class_prime_generator_iterator.html">PrimeGeneratorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
+<tr class="separator:a1085cd8d291b7e82455f2e18c9dbf86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79bab89586d01d7799b3f816401c718"><td class="memItemLeft" align="right" valign="top"><a id="ac79bab89586d01d7799b3f816401c718"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator *</b> ()</td></tr>
+<tr class="separator:ac79bab89586d01d7799b3f816401c718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bd2639a93ce5981b882b11c637cfe0"><td class="memItemLeft" align="right" valign="top"><a id="af9bd2639a93ce5981b882b11c637cfe0"></a>
+pointer&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
+<tr class="separator:af9bd2639a93ce5981b882b11c637cfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T = long&gt;<br />
+class PrimeGeneratorIterator&lt; T &gt;</h3>
+
+<p>质数生成类，演示使用 using 定义迭代器 </p>
+<p>并且演示了迭代器所支持操作的写法 </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>ch03_iterator/<a class="el" href="prime__generator_8cpp.html">prime_generator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

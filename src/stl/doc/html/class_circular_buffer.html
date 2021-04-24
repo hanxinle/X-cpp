@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>stl learning: CircularBuffer&lt; T, cap, Container &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">stl learning
+   </div>
+   <div id="projectbrief">examples and notes on stl feature</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_circular_buffer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CircularBuffer&lt; T, cap, Container &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_circular_buffer.html" title="CircularBuffer 中新增 iterator 类，使其支持迭代器操作">CircularBuffer</a> 中新增 iterator 类，使其支持迭代器操作  
+ <a href="class_circular_buffer.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ch03__iterator_2circular__buffer_8hpp_source.html">circular_buffer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_circular_buffer_1_1_circular_buffer_iterator.html">CircularBufferIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae63fd22da82f592a83eb8c04608a6bed"><td class="memItemLeft" align="right" valign="top"><a id="ae63fd22da82f592a83eb8c04608a6bed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:ae63fd22da82f592a83eb8c04608a6bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63fd22da82f592a83eb8c04608a6bed"><td class="memItemLeft" align="right" valign="top"><a id="ae63fd22da82f592a83eb8c04608a6bed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:ae63fd22da82f592a83eb8c04608a6bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d62302ded5e595e263c47e2b6067b3"><td class="memItemLeft" align="right" valign="top"><a id="a02d62302ded5e595e263c47e2b6067b3"></a>
+typedef <a class="el" href="class_circular_buffer_1_1_circular_buffer_iterator.html">CircularBufferIterator</a>&lt; <a class="el" href="class_container.html">Container</a>, typename Container::iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:a02d62302ded5e595e263c47e2b6067b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a56571b8261660bcc4228ec69605321b0"><td class="memItemLeft" align="right" valign="top"><a id="a56571b8261660bcc4228ec69605321b0"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>head</b> ()</td></tr>
+<tr class="separator:a56571b8261660bcc4228ec69605321b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a99046a17fd8350b99a6bdeb599d39"><td class="memItemLeft" align="right" valign="top"><a id="ad6a99046a17fd8350b99a6bdeb599d39"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tail</b> ()</td></tr>
+<tr class="separator:ad6a99046a17fd8350b99a6bdeb599d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027a65b191bbb9ac690fd5586dfd31bf"><td class="memItemLeft" align="right" valign="top"><a id="a027a65b191bbb9ac690fd5586dfd31bf"></a>
+T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>head</b> () const</td></tr>
+<tr class="separator:a027a65b191bbb9ac690fd5586dfd31bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c93d8c57a848bd6f8e7373766fc38b9"><td class="memItemLeft" align="right" valign="top"><a id="a9c93d8c57a848bd6f8e7373766fc38b9"></a>
+T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tail</b> () const</td></tr>
+<tr class="separator:a9c93d8c57a848bd6f8e7373766fc38b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6001435973002d0d8b58899fd746bedf"><td class="memItemLeft" align="right" valign="top"><a id="a6001435973002d0d8b58899fd746bedf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (T val) noexcept</td></tr>
+<tr class="separator:a6001435973002d0d8b58899fd746bedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55a572d8c2920e9f02de0484216a0df"><td class="memItemLeft" align="right" valign="top"><a id="aa55a572d8c2920e9f02de0484216a0df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>place_back</b> (T val)</td></tr>
+<tr class="separator:aa55a572d8c2920e9f02de0484216a0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca20439d842129c0b08509d9af0d451"><td class="memItemLeft" align="right" valign="top"><a id="a6ca20439d842129c0b08509d9af0d451"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
+<tr class="separator:a6ca20439d842129c0b08509d9af0d451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dc74d187c916b12c1ed229448e99df"><td class="memItemLeft" align="right" valign="top"><a id="ae8dc74d187c916b12c1ed229448e99df"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
+<tr class="separator:ae8dc74d187c916b12c1ed229448e99df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f3f973f3795c1c6c181096973acc90"><td class="memItemLeft" align="right" valign="top"><a id="aa6f3f973f3795c1c6c181096973acc90"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b> () noexcept</td></tr>
+<tr class="separator:aa6f3f973f3795c1c6c181096973acc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f438aaea90c735c513fce4f6e42bfd"><td class="memItemLeft" align="right" valign="top"><a id="a36f438aaea90c735c513fce4f6e42bfd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
+<tr class="separator:a36f438aaea90c735c513fce4f6e42bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a7b5ef4f166a3c9edac00fd228b829"><td class="memItemLeft" align="right" valign="top"><a id="a08a7b5ef4f166a3c9edac00fd228b829"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>full</b> () const noexcept</td></tr>
+<tr class="separator:a08a7b5ef4f166a3c9edac00fd228b829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f54160bfeb6cee7491694e46af099f"><td class="memItemLeft" align="right" valign="top"><a id="ad4f54160bfeb6cee7491694e46af099f"></a>
+Container::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:ad4f54160bfeb6cee7491694e46af099f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b6baacd02945fa97ea2091f54ee94c"><td class="memItemLeft" align="right" valign="top"><a id="a94b6baacd02945fa97ea2091f54ee94c"></a>
+Container::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a94b6baacd02945fa97ea2091f54ee94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56571b8261660bcc4228ec69605321b0"><td class="memItemLeft" align="right" valign="top"><a id="a56571b8261660bcc4228ec69605321b0"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>head</b> ()</td></tr>
+<tr class="separator:a56571b8261660bcc4228ec69605321b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a99046a17fd8350b99a6bdeb599d39"><td class="memItemLeft" align="right" valign="top"><a id="ad6a99046a17fd8350b99a6bdeb599d39"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tail</b> ()</td></tr>
+<tr class="separator:ad6a99046a17fd8350b99a6bdeb599d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027a65b191bbb9ac690fd5586dfd31bf"><td class="memItemLeft" align="right" valign="top"><a id="a027a65b191bbb9ac690fd5586dfd31bf"></a>
+T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>head</b> () const</td></tr>
+<tr class="separator:a027a65b191bbb9ac690fd5586dfd31bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c93d8c57a848bd6f8e7373766fc38b9"><td class="memItemLeft" align="right" valign="top"><a id="a9c93d8c57a848bd6f8e7373766fc38b9"></a>
+T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tail</b> () const</td></tr>
+<tr class="separator:a9c93d8c57a848bd6f8e7373766fc38b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6001435973002d0d8b58899fd746bedf"><td class="memItemLeft" align="right" valign="top"><a id="a6001435973002d0d8b58899fd746bedf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (T val) noexcept</td></tr>
+<tr class="separator:a6001435973002d0d8b58899fd746bedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55a572d8c2920e9f02de0484216a0df"><td class="memItemLeft" align="right" valign="top"><a id="aa55a572d8c2920e9f02de0484216a0df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>place_back</b> (T val)</td></tr>
+<tr class="separator:aa55a572d8c2920e9f02de0484216a0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca20439d842129c0b08509d9af0d451"><td class="memItemLeft" align="right" valign="top"><a id="a6ca20439d842129c0b08509d9af0d451"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
+<tr class="separator:a6ca20439d842129c0b08509d9af0d451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dc74d187c916b12c1ed229448e99df"><td class="memItemLeft" align="right" valign="top"><a id="ae8dc74d187c916b12c1ed229448e99df"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
+<tr class="separator:ae8dc74d187c916b12c1ed229448e99df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f3f973f3795c1c6c181096973acc90"><td class="memItemLeft" align="right" valign="top"><a id="aa6f3f973f3795c1c6c181096973acc90"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b> () noexcept</td></tr>
+<tr class="separator:aa6f3f973f3795c1c6c181096973acc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f438aaea90c735c513fce4f6e42bfd"><td class="memItemLeft" align="right" valign="top"><a id="a36f438aaea90c735c513fce4f6e42bfd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
+<tr class="separator:a36f438aaea90c735c513fce4f6e42bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a7b5ef4f166a3c9edac00fd228b829"><td class="memItemLeft" align="right" valign="top"><a id="a08a7b5ef4f166a3c9edac00fd228b829"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>full</b> () const noexcept</td></tr>
+<tr class="separator:a08a7b5ef4f166a3c9edac00fd228b829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cc0f94ec9777520e1af0c35998c836"><td class="memItemLeft" align="right" valign="top"><a id="a47cc0f94ec9777520e1af0c35998c836"></a>
+<a class="el" href="class_circular_buffer_1_1_circular_buffer_iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a47cc0f94ec9777520e1af0c35998c836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279006fdd3128eebf0ae3690d1862ab0"><td class="memItemLeft" align="right" valign="top"><a id="a279006fdd3128eebf0ae3690d1862ab0"></a>
+<a class="el" href="class_circular_buffer_1_1_circular_buffer_iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a279006fdd3128eebf0ae3690d1862ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ace97e9f2ea4a42cac0f4908eeab66d96"><td class="memItemLeft" align="right" valign="top"><a id="ace97e9f2ea4a42cac0f4908eeab66d96"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="class_circular_buffer.html">CircularBuffer</a> &amp;buf)</td></tr>
+<tr class="separator:ace97e9f2ea4a42cac0f4908eeab66d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace97e9f2ea4a42cac0f4908eeab66d96"><td class="memItemLeft" align="right" valign="top"><a id="ace97e9f2ea4a42cac0f4908eeab66d96"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="class_circular_buffer.html">CircularBuffer</a> &amp;buf)</td></tr>
+<tr class="separator:ace97e9f2ea4a42cac0f4908eeab66d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T, int cap, typename Container = std::array&lt;T, cap&gt;&gt;<br />
+class CircularBuffer&lt; T, cap, Container &gt;</h3>
+
+<p><a class="el" href="class_circular_buffer.html" title="CircularBuffer 中新增 iterator 类，使其支持迭代器操作">CircularBuffer</a> 中新增 iterator 类，使其支持迭代器操作 </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>ch02_container/<a class="el" href="ch02__container_2circular__buffer_8hpp_source.html">circular_buffer.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

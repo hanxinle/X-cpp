@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>stl learning: debug_allocator&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">stl learning
+   </div>
+   <div id="projectbrief">examples and notes on stl feature</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classdebug__allocator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">debug_allocator&lt; T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a3ba700c6efea5f5bafcafac396defd19"><td class="memItemLeft" align="right" valign="top"><a id="a3ba700c6efea5f5bafcafac396defd19"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:a3ba700c6efea5f5bafcafac396defd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:add88bf2a6be0b7de7b157af7d1916ecf"><td class="memTemplParams" colspan="2"><a id="add88bf2a6be0b7de7b157af7d1916ecf"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:add88bf2a6be0b7de7b157af7d1916ecf"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>debug_allocator</b> (const <a class="el" href="classdebug__allocator.html">debug_allocator</a>&lt; U &gt; &amp;) noexcept</td></tr>
+<tr class="separator:add88bf2a6be0b7de7b157af7d1916ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4102a2377a61ea04d0855fe0576b5beb"><td class="memItemLeft" align="right" valign="top"><a id="a4102a2377a61ea04d0855fe0576b5beb"></a>
+value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (std::size_t n)</td></tr>
+<tr class="separator:a4102a2377a61ea04d0855fe0576b5beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ed1fc2a0ad9a463a64ec81f59157f4"><td class="memItemLeft" align="right" valign="top"><a id="ab9ed1fc2a0ad9a463a64ec81f59157f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate</b> (value_type *p, std::size_t n) noexcept</td></tr>
+<tr class="separator:ab9ed1fc2a0ad9a463a64ec81f59157f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2870576b2f8a00ae04bdfaf4144e123"><td class="memTemplParams" colspan="2"><a id="ae2870576b2f8a00ae04bdfaf4144e123"></a>
+template&lt;typename U , typename... Args&gt; </td></tr>
+<tr class="memitem:ae2870576b2f8a00ae04bdfaf4144e123"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>construct</b> (U *p, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:ae2870576b2f8a00ae04bdfaf4144e123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c8e2b9100e304c4e1ca7e3770d946a"><td class="memTemplParams" colspan="2"><a id="a37c8e2b9100e304c4e1ca7e3770d946a"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a37c8e2b9100e304c4e1ca7e3770d946a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>destroy</b> (U *p) noexcept</td></tr>
+<tr class="separator:a37c8e2b9100e304c4e1ca7e3770d946a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00de989a2ef26e5d4ff8f0d16d0e5e5c"><td class="memTemplParams" colspan="2"><a id="a00de989a2ef26e5d4ff8f0d16d0e5e5c"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a00de989a2ef26e5d4ff8f0d16d0e5e5c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classdebug__allocator.html">debug_allocator</a>&lt; U &gt; &amp;) noexcept</td></tr>
+<tr class="separator:a00de989a2ef26e5d4ff8f0d16d0e5e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25d2cc5b445927057769c404cd9e4ff"><td class="memTemplParams" colspan="2"><a id="ad25d2cc5b445927057769c404cd9e4ff"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ad25d2cc5b445927057769c404cd9e4ff"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classdebug__allocator.html">debug_allocator</a>&lt; U &gt; &amp;u) noexcept</td></tr>
+<tr class="separator:ad25d2cc5b445927057769c404cd9e4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ch06_memory/<a class="el" href="debug__allocator_8cpp.html">debug_allocator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
