@@ -9,6 +9,7 @@ public:
 
     Handle(const Point& other) :p(new Point(other)) { }
     Handle(const Handle& other) :p(other.p), uc(other.uc) { }
+
     //Handle& operator=(const Handle& other) {
     //    if (uc.ReAttach(other.uc))
     //        delete p;
@@ -16,7 +17,7 @@ public:
     //    return *this;
     //}
 
-    // 重新实现，统一接口 operator=
+    // 重新实现，将ReAttach操作统一接口 operator=
     Handle& operator=(const Handle& other) {
         uc = other.uc;
         p = other.p;
