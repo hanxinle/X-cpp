@@ -6,7 +6,7 @@
 
 ## 2 Nginx
 
-将 Nginx 学习的总结请点击这个[链接](./src/nginx/) ，含部分实验代码。
+将 Nginx 学习的总结请点击这个[链接](https://github.com/hanxinle/X-Nginx) ，含部分实验代码。
 
 
 ## 3 STL
