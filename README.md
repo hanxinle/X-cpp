@@ -2,7 +2,7 @@
 
 [数据结构和算法实现](https://github.com/hanxinle/XAlgorithm)
 
-# 网络
+# 网络、GUI
 
 * C++ 网盘
 
