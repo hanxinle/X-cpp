@@ -51,5 +51,6 @@ int main(void) {
     pApi->test("现在是使用简单工厂方法重构");
     Api* pApiEx = Factory::createApi();
     system("pause");
+
     return 0;
 }

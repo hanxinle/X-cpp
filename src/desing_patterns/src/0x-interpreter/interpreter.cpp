@@ -1,5 +1,4 @@
-
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <iostream>
 #include <vector>
 #include <string>
@@ -16,7 +15,7 @@ public:
 
 class IExpression {
 public:
-    virtual void Eval(Context * p) = 0;
+    virtual void Eval(Context* p) = 0;
 };
 
 class Operator :public IExpression {
@@ -25,7 +24,7 @@ public:
         this->op_ = op;
     }
 
-    void Eval(Context * p) {
+    void Eval(Context* p) {
         p->oper_ = op_;
     }
 private:
@@ -38,7 +37,7 @@ public:
     Operand(int num) {
         this->num_ = num;
     }
-    void Eval(Context * p) {
+    void Eval(Context* p) {
         switch (p->oper_) {
         case '\0':p->val_ = num_; break;
         case '+':p->val_ += num_; break;
@@ -54,7 +53,7 @@ private:
 class Calculator {
 public:
     int Calc(string expression) {
-        Context * p = new Context;
+        Context* p = new Context;
         vector <IExpression*> tree;
         for (int i = 0; i < expression.size(); i++) {
             if ((expression[i]) == '+' || (expression[i] == '-')) {
@@ -74,7 +73,7 @@ public:
 };
 
 int main() {
-    Calculator * pC = new Calculator;
+    Calculator* pC = new Calculator;
     cout << "3+4-2=" << pC->Calc("3+4-2") << endl;
     system("pause");
     return 0;

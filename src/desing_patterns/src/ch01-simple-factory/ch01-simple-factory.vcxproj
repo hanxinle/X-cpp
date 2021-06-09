@@ -24,6 +24,7 @@
     <ProjectGuid>{43da8ce9-d62a-495c-a014-5fdfdeaa9a99}</ProjectGuid>
     <RootNamespace>ch01simplefactory</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>01-simple-factory</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
