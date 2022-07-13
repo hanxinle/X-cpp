@@ -16,7 +16,7 @@ const static int XLEN = 80; // x 轴元素范围
 
 // 提供一个辅助函数，将光标定位，在这个函数语句调用后调用 printf
 // 可在光标后打印内容.
-void GotoLocation(int x, int y) {
+static void  GotoLocation(int x, int y) {
     COORD cd;
     cd.X = x;
     cd.Y = y;
@@ -78,7 +78,7 @@ static void LettersMoving() {
 }
 
 // 初始化子弹，全局使用唯一的子弹
-void InitBullet() {
+void static InitBullet() {
     bullet.x = 100;
     bullet.y = 25;
     bullet.display = false;
@@ -102,9 +102,8 @@ static void  BulletMoving() {
 
 int main() {
     unsigned int score = 0;
-    int end;
-    // 1 初始化字母
     InitLetters();
+
     // 结束条件，最后一个字母下落到底部.//这样判断挺智慧的.
     while (letters[TOTALCNT - 1].y < 25) {
 
