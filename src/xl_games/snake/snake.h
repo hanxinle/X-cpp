@@ -1,6 +1,6 @@
-﻿#pragma once
-#include "food.h"
-#include "snake_part.h"
+#pragma once
+#include "food.hpp"
+#include "snake_part.hpp"
 #include <vector>
 // class Food;
 
@@ -8,7 +8,8 @@ class Snake {
 public:
     enum class Direction { UP, DOWN, LEFT, RIGHT };
     Snake(
-        int x = 40, int y = 10, size_t len = 4, Direction direction = Direction::LEFT, int speed = 500, char ipic = '*');
+        int x = 40, int y = 10, size_t len = 4, Direction direction = Direction::LEFT, int speed = 500,
+        char ipic = '*');
 
     inline void Clear() {
         for (auto i = 0; i < snake_length_; i++) {
@@ -40,7 +41,7 @@ public:
         if ((snake_body_[0].x_ == pfd->x_) && (snake_body_[0].y_ == pfd->y_)) {
             GrowUp();
             return true;
-        } 
+        }
         return false;
     }
 
@@ -58,8 +59,8 @@ public:
     // snake head x,y
     int head_x_;
     int head_y_;
-    int speed_;           // 2000 == 2s
-    char ipic_; 
+    int speed_; // 2000 == 2s
+    char ipic_;
     Direction cur_direction_;
     std::vector<BaseUnit> snake_body_;
 };

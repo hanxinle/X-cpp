@@ -9,12 +9,12 @@ const unsigned int YLENGTH = 25;
 class Tool {
 public:
     static void Gotoxy(int x, int y) {
-    COORD coor;
-    coor.X = x;
-    coor.Y = y;
+        COORD coor;
+        coor.X = x;
+        coor.Y = y;
 
-    HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleCursorPosition(handle, coor);
+        HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleCursorPosition(handle, coor);
     }
 };
 

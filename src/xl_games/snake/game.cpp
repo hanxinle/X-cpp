@@ -1,5 +1,6 @@
-﻿#include "game.h"
+#include "game.h"
 #include <conio.h>
+#include <iostream>
 #include <windows.h>
 using namespace std;
 
@@ -14,16 +15,19 @@ Game::Game() {
 
     food_ = new Food();
     snake_ = new Snake();
+
     DrawGameArea();
     DrawGameInfo();
 }
 
 void Game::DrawGameArea() {
-    // 与下面的程序执行结果相同.
-    // Tool::Gotoxy(KLEFT, KUP);
-    // for (auto i = 0; i < KWIDTH; i++) {
-    //    cout << "-";
-    //}
+    /**************************************************************
+    * 与下面的程序执行结果相同.
+     Tool::Gotoxy(KLEFT, KUP);
+     for (auto i = 0; i < KWIDTH; i++) {
+        cout << "-";
+    }
+    ***************************************************************/
     Tool::Gotoxy(KLEFT + 1, KUP + 2);
     for (auto i = 0; i < KWIDTH - 2; i++) {
         cout << "-";
@@ -40,6 +44,7 @@ void Game::DrawGameArea() {
         Tool::Gotoxy(KLEFT + KWIDTH - 1, i);
         cout << "|";
     }
+
     Tool::Gotoxy(KLEFT, KUP + KHEIGHT);
     for (auto i = 0; i < KWIDTH; i++) {
         cout << "-";
@@ -69,8 +74,6 @@ void Game::Run() {
                 Tool::Gotoxy(30, 30);
                 cout << "eat food" << endl;
                 score_++;
-                /*         snake_->Clear();
-                         snake_->ShowSnake();*/
                 DrawGameInfo();
                 food_->CreatePos(&(snake_->snake_body_));
                 food_->Show();
@@ -81,16 +84,16 @@ void Game::Run() {
 
 bool Game::CheckFailed() {
     // left
-    if (snake_->snake_body_[0].x_ < KLEFT)
+    if (snake_->snake_body_[0].x_ <= KLEFT)
         return true;
     // right
-    if (snake_->snake_body_[0].x_ > KLEFT + KWIDTH)
+    if (snake_->snake_body_[0].x_ >= KLEFT + KWIDTH - 2)
         return true;
     // up
-    if (snake_->snake_body_[0].y_ < KUP) // 注意信息扎用
+    if (snake_->snake_body_[0].y_ <= KUP + 2) // 注意信息扎用
         return true;
     // down
-    if (snake_->snake_body_[0].y_ > KUP + KHEIGHT)
+    if (snake_->snake_body_[0].y_ >= KUP + KHEIGHT)
         return true;
     // eat itself
     if (snake_->Died())

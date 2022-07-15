@@ -1,5 +1,5 @@
-﻿#pragma once
-#include "food.h"
+#pragma once
+#include "food.hpp"
 #include "snake.h"
 #include <memory>
 class Game {
@@ -10,10 +10,9 @@ public:
     // 绘制游戏区域.
     void DrawGameArea();
     void DrawGameInfo();
-    
+
     void Run();
     bool CheckFailed();
-
 
 public:
     // 用于绘制游戏区域和信息区域.

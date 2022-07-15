@@ -18,16 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="base_unit.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="food.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="snake.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SnakePart.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="game.cpp">
@@ -35,19 +26,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="base_unit.h">
+    <ClInclude Include="base_unit.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="food.h">
+    <ClInclude Include="food.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="config_and_tools.h">
+    <ClInclude Include="config_and_tools.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="snake.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="snake_part.h">
+    <ClInclude Include="snake_part.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="game.h">

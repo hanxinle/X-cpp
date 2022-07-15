@@ -139,20 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="base_unit.cpp" />
-    <ClCompile Include="food.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="snake.cpp" />
-    <ClCompile Include="SnakePart.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="base_unit.h" />
-    <ClInclude Include="config_and_tools.h" />
-    <ClInclude Include="food.h" />
+    <ClInclude Include="base_unit.hpp" />
+    <ClInclude Include="config_and_tools.hpp" />
+    <ClInclude Include="food.hpp" />
     <ClInclude Include="game.h" />
     <ClInclude Include="snake.h" />
-    <ClInclude Include="snake_part.h" />
+    <ClInclude Include="snake_part.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
