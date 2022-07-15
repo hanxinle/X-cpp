@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "config_and_tools.h"
 #include <iostream>
 class BaseUnit {
@@ -7,8 +7,8 @@ public:
         : x_(x)
         , y_(y)
         , sympol_(s) {}
+    ~BaseUnit() {}
 
-    // 以下函数是别人给添加的
     inline void Show() {
         Tool::Gotoxy(x_, y_);
         std::cout << sympol_;

@@ -1,29 +1,75 @@
-#include "snake.h"
+﻿#include "snake.h"
 #include "config_and_tools.h"
 #include "snake_part.h"
 #include <iostream>
 
-Snake::Snake(size_t len) {
+Snake::Snake(int x, int y, size_t len, Direction direction, int speed, char ipic) {
+
+    head_x_ = x;
+    head_y_ = y;
+    speed_ = speed;
+    ipic_ = ipic;
+    cur_direction_ = direction;
+    snake_length_ = len;
+
+    int tx = 0, ty = 0;
+
     for (size_t i = 0; i < len; i++) {
-        auto x = 40 + i;
-        auto y = 12;
-        auto syp = '*';
-        SnakePart sp(x, y, syp);
+        // 这里可以根据方向做初始化的优化.
+        switch (cur_direction_) {
+        case Direction::UP:
+            tx = head_x_;
+            ty = head_y_ + i;
+            break;
+
+        case Direction::DOWN:
+            tx = head_x_;
+            ty = head_y_ - i;
+            break;
+
+        case Direction::LEFT:
+            tx = head_x_ + i;
+            ty = head_y_;
+            break;
+
+        case Direction::RIGHT:
+            tx = head_x_ - i;
+            ty = head_y_;
+            break;
+        }
+        SnakePart sp(tx, ty, ipic);
         snake_body_.push_back(sp);
     }
-
-    snake_head_ = snake_body_.begin();
-    cur_direction_ = Direction::UP;
-    snake_length_ = len;
 }
 
-//void Snake::Show() {
+// void Snake::Show() {
 //    for (auto const v : snake_body_) {
 //        Tool::Gotoxy(v.x_, v.y_);
 //        std::cout << v.sympol_;
 //    }
 //}
- 
+
+void Snake::ChangeDirection(int drc) {
+    switch (drc) {
+    case 'w':
+        if (cur_direction_ == Direction::LEFT || cur_direction_ == Direction::RIGHT)
+            cur_direction_ = Direction::UP;
+        break;
+    case 's':
+        if (cur_direction_ == Direction::LEFT || cur_direction_ == Direction::RIGHT)
+            cur_direction_ = Direction::DOWN;
+        break;
+    case 'a':
+        if (cur_direction_ == Direction::UP || cur_direction_ == Direction::DOWN)
+            cur_direction_ = Direction::LEFT;
+        break;
+    case 'd':
+        if (cur_direction_ == Direction::UP || cur_direction_ == Direction::DOWN)
+            cur_direction_ = Direction::RIGHT;
+        break;
+    }
+}
+
 // 先假设每个小模块没有 show 模块
 void Snake::Moving() {
     // switch (cur_direction_) {
@@ -73,12 +119,13 @@ void Snake::Moving() {
     // default:
     //    break;
     //}
+    /********* 蛇的移动原理 ****************
+    * 身体坐标从尾部向前覆盖的过程,
+    * 
+    * 
+    * 
+    **************************************/
     Clear();
-    // 要对整条蛇身进行刷新，每次重新绘制，省去管理的逻辑!!!!
-    //for (auto i = 0; i < snake_length_; i++) {
-    //    snake_body_[i].Erase();
-    //}
-
     for (auto i = snake_length_ - 1; i > 0; i--) {
         // if (i == snake_body_.size() - 1) {
         //    Tool::Gotoxy(snake_body_[i].x_, snake_body_[i].y_);
@@ -105,12 +152,7 @@ void Snake::Moving() {
     default:
         break;
     }
-    Show();
-
+    ShowSnake();
+    Sleep(speed_);
 }
 
-void Snake::GrowUp(Food *pfood) {}
-
-bool Snake::Died() {
-    return false;
-}
