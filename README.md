@@ -6,7 +6,7 @@
 
 * C++ 网盘
 
-[源码](https://github.com/hanxinle/XCloud-Disk),所用技术：Qt5+Libevent+多线程reactor模型。
+[源码](https://github.com/hanxinle/XCloud-Disk),所用技术：Qt5+Libevent(Reactor)+线程池。
 
 * 视频编辑器
 
